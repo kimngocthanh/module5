@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container px-5 my-5">
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <div class="mb-3">
+                <label class="form-label" for="tenDịchVụ">Tên dịch vụ</label>
+                <input class="form-control" id="tenDịchVụ" type="text" placeholder="Tên dịch vụ" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="tenDịchVụ:required">Tên dịch vụ is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="diệnTichSửDụng">Diện tích sử dụng</label>
+                <input class="form-control" id="diệnTichSửDụng" type="text" placeholder="Diện tích sử dụng" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="diệnTichSửDụng:required">Diện tích sử dụng is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="chiPhiThue">Chi phí thuê</label>
+                <input class="form-control" id="chiPhiThue" type="text" placeholder="Chi phí thuê" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="chiPhiThue:required">Chi phí thuê is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="sốLượngNgườiTốiDa">Số lượng người tối đa</label>
+                <input class="form-control" id="sốLượngNgườiTốiDa" type="text" placeholder="Số lượng người tối đa" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="sốLượngNgườiTốiDa:required">Số lượng người tối đa is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="chọnKiểuThue">chọn kiểu thuê</label>
+                <select class="form-select" id="chọnKiểuThue" aria-label="chọn kiểu thuê">
+                    <option value="năm">năm</option>
+                    <option value="tháng">tháng</option>
+                    <option value="ngày">ngày</option>
+                    <option value="giờ">giờ</option>
+                </select>
+            </div>
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                    <p>To activate this form, sign up at</p>
+                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                </div>
+            </div>
+            <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
