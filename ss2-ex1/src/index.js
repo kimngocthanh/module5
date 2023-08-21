@@ -61,11 +61,11 @@ root.render(
       <th>contact</th>
       <th>country</th>
     </tr>
-    {students.map(count => (
+    {students.map((count, index) => (
       <tr>
-        <td>{count.company}</td>
-        <td>{count.contact}</td>
-        <td>{count.country}</td>
+        <td key={index}>{count.company}</td>
+        <td key={index}>{count.contact}</td>
+        <td key={index}>{count.country}</td>
       </tr>
     ))}
   </table>

@@ -18,7 +18,9 @@ import './index.css';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.css";
 
-const element = <div className="container d-flex align-items-center text-center">
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
+  <div className="container d-flex align-items-center text-center">
     <div className="form-signin">
       <form>
         <img className="mb-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="" width="72" height="57" />
@@ -40,7 +42,5 @@ const element = <div className="container d-flex align-items-center text-center"
         <p className="mt-5 mb-3 text-muted">© 2017–2021</p>
       </form>
     </div>
-  </div>;
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(element);
+  </div>
+);
