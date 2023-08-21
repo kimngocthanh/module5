@@ -1,0 +1,27 @@
+nav {
+    margin-top: 2rem;
+    background: transparent;
+    background-color: #046056;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgb(22, 31, 39);
+}
+
+/* body {
+    background-image: url("http://dcmstudios.com.vn/wp-content/uploads/2021/07/IMG_2081-2.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+
+
+
+.footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #addccf;
+}
