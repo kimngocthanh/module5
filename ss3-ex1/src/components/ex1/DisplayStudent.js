@@ -1,10 +1,10 @@
-import {Component} from "react";
+import { Component } from "react";
 
 class Student extends Component {
     constructor() {
         super();
         this.state = {
-            newStudent : {},
+            newStudent: {},
             studentList: [
                 { id: '1', name: 'Thanh', age: '22', address: 'Hà Nội' },
                 { id: '2', name: 'Phap', age: '23', address: 'Hà Nội' },
@@ -18,9 +18,17 @@ class Student extends Component {
         let name = document.getElementById("name").value;
         let age = document.getElementById("age").value;
         let address = document.getElementById("address").value;
-        const newStudent = {id:id,name:name,age:age,address:address}
+        const newStudent = { id: id, name: name, age: age, address: address }
         this.setState({
-            studentList : [...this.state.studentList,newStudent]
+            studentList: [...this.state.studentList, newStudent]
+        })
+    }
+    deleteStudent(indexDelete) {
+
+        const list = this.state.studentList.filter((e, index) => index !== indexDelete);
+        // this.state.studentList.splice(index,1);
+        this.setState({
+            studentList: list
         })
     }
     render() {
@@ -32,13 +40,15 @@ class Student extends Component {
                         <th>Name</th>
                         <th>Age</th>
                         <th>Address</th>
+                        <th>Delete</th>
                     </tr>
                     {this.state.studentList.map((student, index) => {
                         return <tr key={index}>
-                        <td >{student.id}</td>
-                        <td >{student.name}</td>
-                        <td >{student.age}</td>
-                        <td >{student.address}</td>
+                            <td>{student.id}</td>
+                            <td>{student.name}</td>
+                            <td>{student.age}</td>
+                            <td>{student.address}</td>
+                            <td><button onClick={() => this.deleteStudent(index)}>Xoá</button></td>
                         </tr>
                     })}
                 </table>
@@ -52,5 +62,5 @@ class Student extends Component {
     }
 }
 
-export default Student ;
+export default Student;
 

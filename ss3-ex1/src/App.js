@@ -1,9 +1,11 @@
 import './App.css';
-import TodoApp from './components/ex2/TodoApp';
+import Student from './components/ex1/DisplayStudent';
+// import TodoApp from './components/ex2/TodoApp';
+
 function App() {
   return (
-    // <Student />
-    <TodoApp />
+    <Student />
+    // <TodoApp />
   );
 }
 
