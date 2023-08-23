@@ -14,10 +14,10 @@ function Service() {
                         <p className="card-text">View hướng biển</p>
                     </div>
                     <div className="card-body">
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Edit
                         </a>
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Delete
                         </a>
                     </div>
@@ -35,10 +35,10 @@ function Service() {
                         <p className="card-text">View hướng biển</p>
                     </div>
                     <div className="card-body">
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Edit
                         </a>
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Delete
                         </a>
                     </div>
@@ -56,10 +56,10 @@ function Service() {
                         <p className="card-text">View hướng biển</p>
                     </div>
                     <div className="card-body">
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Edit
                         </a>
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Delete
                         </a>
                     </div>
@@ -77,10 +77,10 @@ function Service() {
                         <p className="card-text">View hướng biển</p>
                     </div>
                     <div className="card-body">
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Edit
                         </a>
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Delete
                         </a>
                     </div>
@@ -98,10 +98,10 @@ function Service() {
                         <p className="card-text">View hướng biển</p>
                     </div>
                     <div className="card-body">
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Edit
                         </a>
-                        <a href="#" className="card-link">
+                        <a href="/#" className="card-link">
                             Delete
                         </a>
                     </div>

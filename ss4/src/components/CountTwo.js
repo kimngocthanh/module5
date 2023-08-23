@@ -1,4 +1,4 @@
-import useIncrement from "../components/UseIncrement";
+import useIncrement from "../hooks/useIncrement";
 
 function CountTwo() {
     const [count,increase] = useIncrement(2);

@@ -3,7 +3,7 @@ function Footer() {
         <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
             <div className="col mb-3">
                 <a
-                    href=""
+                    href="/#"
                     className="d-flex align-items-center mb-3 link-dark text-decoration-none"
                 >
                     <svg className="bi me-2" width={40} height={32}>
@@ -16,22 +16,22 @@ function Footer() {
             <div className="col mb-4">
                 <ul className="nav flex-column">
                     <li className="nav-item mb-2">
-                        <a href="#" className="nav-link p-0 text-muted">
+                        <a href="/#" className="nav-link p-0 text-muted">
                             Giá Công bố
                         </a>
                     </li>
                     <li className="nav-item mb-2">
-                        <a href="#" className="nav-link p-0 text-muted">
+                        <a href="/#" className="nav-link p-0 text-muted">
                             Lifestyle Blog
                         </a>
                     </li>
                     <li className="nav-item mb-2">
-                        <a href="#" className="nav-link p-0 text-muted">
+                        <a href="/#" className="nav-link p-0 text-muted">
                             Tuyển dụng
                         </a>
                     </li>
                     <li className="nav-item mb-2">
-                        <a href="#" className="nav-link p-0 text-muted">
+                        <a href="/#" className="nav-link p-0 text-muted">
                             Liên hệ
                         </a>
                     </li>

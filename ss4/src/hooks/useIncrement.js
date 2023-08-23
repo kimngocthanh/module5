@@ -1,13 +1,12 @@
-import {useState} from 'react'
+import { useState } from 'react'
 function useIncrement(addAmount) {
     const [count, setCount] = useState(0)
 
     const increase = () => {
-        const newCount = count+addAmount
-        setCount(newCount);
+        setCount((prev) => (prev + addAmount));
     }
 
-    return [count,increase]
+    return [count, increase]
 }
 
 export default useIncrement;

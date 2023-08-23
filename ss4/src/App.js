@@ -1,9 +1,7 @@
 
 import './App.css';
-import CountOne from './hooks/customHookOne';
-import CountTwo from './hooks/customHookTwo';
-
-
+import CountOne from './components/CountOne';
+import CountTwo from './components/CountTwo';
 function App() {
   return (
     <>
