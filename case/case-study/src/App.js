@@ -8,6 +8,9 @@ import Service from './components/Service';
 import EditService from './components/EditService';
 import CreateService from './components/CreateService';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Customer from './components/Customer';
+import EditCustomer from './components/EditCustomer';
+import AddCustomer from './components/AddCustomer';
 
 function App() {
   return (
@@ -16,12 +19,14 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Service />} />
-          <Route path='/create' element={<CreateService />} />
-          <Route path='/edit' element={<EditService />} />
+          <Route path='/service/create' element={<CreateService />} />
+          <Route path='/service/edit' element={<EditService />} />
+          <Route path='/customer/list' element={<Customer />} />
+          <Route path='/customer/edit' element={<EditCustomer />} />
+          <Route path='/customer/add' element={<AddCustomer />} />
         </Routes>
         <Footer />
       </Router>
-
     </div>
   );
 }
