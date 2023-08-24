@@ -64,24 +64,24 @@ function ToKhaiYte() {
                             <div>
                                 <label>Số hộ chiếu/CMND</label>
                                 <Field type="number" name="idcard" />
-                                <ErrorMessage name="name" component='span' />
+                                <ErrorMessage name="idcard" component='span' />
                             </div>
                             <div>
                                 <label>Năm Sinh</label>
                                 <Field type="number" name="date" />
-                                <ErrorMessage name="name" component='span' />
+                                <ErrorMessage name="date" component='span' />
                             </div>
                             <div>
                                 <label>Giới tính</label>
-                                <Field name="gender" type="radio" defaultValue="1" />
+                                <Field name="gender" type="radio" value="1" />
                                 Nam
-                                <Field name="gender" type="radio" defaultValue="0" />
+                                <Field name="gender" type="radio" value="0" />
                                 Nữ
                             </div>
                             <div>
                                 <label>Quốc tịch</label>
                                 <Field type="text" name="country" />
-                                <ErrorMessage name="name" component='span' />
+                                <ErrorMessage name="country" component='span' />
                             </div>
                             <div>
                                 <label>Công ty làm việc</label>
@@ -93,38 +93,38 @@ function ToKhaiYte() {
                             </div>
                             <div>
                                 <label>Có thẻ bảo hiểm y tế</label>
-                                <Field type="checkbox" name="insurance" defaultValue="insurance" />
+                                <Field type="checkbox" name="insurance" value="insurance" />
                             </div>
                             <div>
                                 <h2>Địa chỉ liên lạc tại Việt Nam</h2>
                                 <label>Tỉnh thành</label>
                                 <Field type="text" name="city" />
-                                <ErrorMessage name="name" component='span' />
+                                <ErrorMessage name="city" component='span' />
                             </div>
                             <div>
                                 <label>Quận/huyện</label>
                                 <Field type="text" name="district" />
-                                <ErrorMessage name="name" component='span' />
+                                <ErrorMessage name="district" component='span' />
                             </div>
                             <div>
                                 <label>Phường/xã</label>
                                 <Field type="text" name="ward" />
-                                <ErrorMessage name="name" component='span' />
+                                <ErrorMessage name="ward" component='span' />
                             </div>
                             <div>
                                 <label>Số nhà, phố, tổ dân phố, thôn, đội</label>
                                 <Field type="text" name="village" />
-                                <ErrorMessage name="name" component='span' />
+                                <ErrorMessage name="village" component='span' />
                             </div>
                             <div>
                                 <label>Số điện thoại</label>
                                 <Field type="number" name="phone" />
-                                <ErrorMessage name="name" component='span' />
+                                <ErrorMessage name="phone" component='span' />
                             </div>
                             <div>
                                 <label>Email</label>
                                 <Field type="email" name="email" />
-                                <ErrorMessage name="name" component='span' />
+                                <ErrorMessage name="email" component='span' />
                             </div>
                             <h3>
                                 Trong vòng 14 ngày qua Anh/Chị có đến quốc gia/vùng lãnh thổ nào(Có thể đi
@@ -136,26 +136,26 @@ function ToKhaiYte() {
                                     Trong vòng 14 ngày qua Anh/Chị có thấy xuất hiện dấu hiệu nào sau đây
                                     không?
                                 </h3>
-                                <Field type="checkbox" name="sick" defaultValue="Sốt" />
+                                <Field type="checkbox" name="sick" value="Sốt" />
                                 Sốt
-                                <Field type="checkbox" name="sick" defaultValue="Ho" />
+                                <Field type="checkbox" name="sick" value="Ho" />
                                 Ho
-                                <Field type="checkbox" name="sick" defaultValue="Khó thở" />
+                                <Field type="checkbox" name="sick" value="Khó thở" />
                                 Khó thở
-                                <Field type="checkbox" name="sick" defaultValue="Viêm phổi" />
+                                <Field type="checkbox" name="sick" value="Viêm phổi" />
                                 Viêm phổi
-                                <Field type="checkbox" name="sick" defaultValue="Đau họng" />
+                                <Field type="checkbox" name="sick" value="Đau họng" />
                                 Đau họng
-                                <Field type="checkbox" name="sick" defaultValue="Mệt mỏi" />
+                                <Field type="checkbox" name="sick" value="Mệt mỏi" />
                                 Mệt mỏi
                             </div>
                             <div>
                                 <h3>Trong vòng 14 ngày qua Anh/Chị có tiếp xúc với?</h3>
-                                <Field type="checkbox" name="contact" defaultValue={7} /> Người bệnh hoặc nghi
+                                <Field type="checkbox" name="contact" value={7} /> Người bệnh hoặc nghi
                                 ngờ, mắc bệnh COVID-19
-                                <Field type="checkbox" name="contact" defaultValue={8} /> Người từ nước có bệnh
+                                <Field type="checkbox" name="contact" value={8} /> Người từ nước có bệnh
                                 COVID-19
-                                <Field type="checkbox" name="contact" defaultValue={9} /> Người có biểu hiện (Sốt,
+                                <Field type="checkbox" name="contact" value={9} /> Người có biểu hiện (Sốt,
                                 ho, khó thở, viêm phổi)
                             </div>
                             <button type="submit">Submit</button>
