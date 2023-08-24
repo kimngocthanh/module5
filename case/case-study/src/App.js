@@ -11,6 +11,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Customer from './components/Customer';
 import EditCustomer from './components/EditCustomer';
 import AddCustomer from './components/AddCustomer';
+import Contact from './components/CreateContact';
+import CreateContact from './components/CreateContact';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path='/customer/list' element={<Customer />} />
           <Route path='/customer/edit' element={<EditCustomer />} />
           <Route path='/customer/add' element={<AddCustomer />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/contact/add' element={<CreateContact />} />
         </Routes>
         <Footer />
       </Router>
