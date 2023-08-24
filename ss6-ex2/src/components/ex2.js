@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import * as BookService from '../service/BookService';
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 function BookList() {
     const [books, setBooks] = useState([]);
 
@@ -15,13 +15,13 @@ function BookList() {
     }
 
     const deleteBook = async (id) => {
-        const result = await BookService.deleteBook(id);
+        await BookService.deleteBook(id);
         getAllBook();
     }
     return (
         <>
             <div className='container'>
-            <Link to={'/create'}>add create</Link>
+                <Link to={'/create'}>add create</Link>
                 <table className='table table-striped'>
                     <thead><tr>
                         <th>title</th>
@@ -36,7 +36,7 @@ function BookList() {
                                 <tr key={book}>
                                     <td>{book.title}</td>
                                     <td>{book.quantity}</td>
-                                    <td><button>edit</button></td>
+                                    <td><Link to={'/edit/'+book.id}>Edit</Link></td>
                                     <td><button onClick={() => deleteBook(book.id)}>delete</button></td>
                                 </tr>
                             ))
