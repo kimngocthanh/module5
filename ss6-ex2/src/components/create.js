@@ -1,7 +1,8 @@
-import { Formik, Form , Field} from "formik";
+import { Formik, Form, Field } from "formik";
 import * as BookService from "../service/BookService";
+import { useNavigate } from "react-router-dom";
 function AddBook() {
-
+    const navigate = useNavigate();
     const addBook = async (values) => {
         await BookService.addBook(values);
     }
@@ -14,8 +15,9 @@ function AddBook() {
                     quantity: ""
                 }}
 
-                onSubmit={ async (values) =>{
+                onSubmit={async (values) => {
                     await addBook(values);
+                    navigate("/");
                 }}
             >
                 {
