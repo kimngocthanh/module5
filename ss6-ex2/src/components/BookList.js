@@ -10,7 +10,7 @@ function BookList() {
 
     const getAllBook = async () => {
         const result = await BookService.getAll();
-        setBooks(prev => prev = result);
+        setBooks(result);
 
     }
 
