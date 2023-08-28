@@ -9,7 +9,7 @@ function ToDoList() {
 
     const getAllTodoList = async () => {
         const result = await TodoService.getAll();
-        setTodos((prev) => prev = result);
+        setTodos(result);
     }
 
     const addTodo = async () => {

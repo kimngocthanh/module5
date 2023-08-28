@@ -1,0 +1,19 @@
+{
+  "book": [
+    {
+      "id": 2,
+      "title": "book number two",
+      "quantity": 100
+    },
+    {
+      "title": "Thành gà vl luôn",
+      "quantity": 12,
+      "id": 3
+    },
+    {
+      "title": "Tân gà y chang",
+      "quantity": 12,
+      "id": 4
+    }
+  ]
+}

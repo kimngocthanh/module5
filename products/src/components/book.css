@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+label{
+    display: flex;
+}
+button{
+    margin-top: 1rem;
+}
+.add{
+    float: right;
+}
+.title{
+    margin-top: 1rem;
+}
+.btn{
+    margin: 0 5px;
+}
