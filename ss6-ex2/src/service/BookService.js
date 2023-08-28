@@ -30,7 +30,7 @@ export const addBook = async (book) => {
 export const editBook = async (book,id) => {
     try {
         const result = await axios.put('http://localhost:8080/book/'+id,book)
-        return result.status;
+        return result.data;
     }catch(e){
         console.log(e);
     }

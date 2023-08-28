@@ -1,24 +1,19 @@
 {
   "book": [
     {
-      "title": "aaa",
-      "quantity": "12",
-      "id": 1
+      "id": 1,
+      "title": "cường gà",
+      "quantity": 4123
     },
     {
-      "title": "aaa",
-      "quantity": "12",
+      "title": "Thànhg gà hươi",
+      "quantity": 454235,
       "id": 2
     },
     {
-      "title": "A Pháp Gà Què",
-      "quantity": 123,
-      "id": 5
-    },
-    {
-      "title": "111111",
-      "quantity": 1111,
-      "id": 6
+      "title": "/quý gà vl",
+      "quantity": 565,
+      "id": 3
     }
   ]
 }

@@ -18,10 +18,12 @@ function BookList() {
         await BookService.deleteBook(id);
         getAllBook();
     }
+
     return (
         <>
             <div className='container'>
-                <Link to={'/create'}>add create</Link>
+                <h1>Book list</h1> 
+                <Link to={'/create'}><button className='btn btn-success'>Add</button></Link>
                 <table className='table table-striped'>
                     <thead><tr>
                         <th>title</th>
@@ -36,8 +38,8 @@ function BookList() {
                                 <tr key={book}>
                                     <td>{book.title}</td>
                                     <td>{book.quantity}</td>
-                                    <td><Link to={'/edit/'+book.id}>Edit</Link></td>
-                                    <td><button onClick={() => deleteBook(book.id)}>delete</button></td>
+                                    <td><Link to={'/edit/'+book.id}><button className='btn btn-warning'>Edit</button></Link></td>
+                                    <td><button className='btn btn-danger' onClick={()=> deleteBook(book.id)}>delete</button></td>
                                 </tr>
                             ))
                         }

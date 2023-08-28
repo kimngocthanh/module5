@@ -1,25 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import BookList from './components/BookList';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AddBook from './components/create';
-import EditBook from './components/edit';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
-    <Router>
-      <Routes>
-        <Route path='/' element={<BookList />} />
-        <Route path='/create' element={<AddBook />} />
-        <Route path='/edit/:id' element={<EditBook />} />
-      </Routes>
-    </Router>
-
+    <App />
   </React.StrictMode>
 );
 
