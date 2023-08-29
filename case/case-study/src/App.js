@@ -1,18 +1,14 @@
 
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './Header';
+import Footer from './Footer'
 import "bootstrap/dist/css/bootstrap.css";
 import './style.css';
-import Service from './components/services/Service';
-import EditService from './components/services/EditService';
-import CreateService from './components/services/CreateService';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Customer from './components/Customer';
-import EditCustomer from './components/EditCustomer';
-import AddCustomer from './components/AddCustomer';
-import Contact from './components/CreateContact';
-import CreateContact from './components/CreateContact';
+import { ListServices } from './services/components/Service';
+import EditService from './services/components/EditService';
+import CreateService from './services/components/CreateService';
+
 
 function App() {
   return (
@@ -20,14 +16,9 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path='/' element={<Service />} />
-          <Route path='/service/create' element={<CreateService />} />
-          <Route path='/service/edit' element={<EditService />} />
-          <Route path='/customer/list' element={<Customer />} />
-          <Route path='/customer/edit' element={<EditCustomer />} />
-          <Route path='/customer/add' element={<AddCustomer />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/contact/add' element={<CreateContact />} />
+          <Route path='/' element={<ListServices />} />
+          <Route path='/edit-service/:id' element={<EditService />} />
+          <Route path='/create-service' element={<CreateService />} />
         </Routes>
         <Footer />
       </Router>

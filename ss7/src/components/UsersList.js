@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { DELETE_USERS } from "../redux/Types";
+import { DELETE_USERS, GET_ALL_USERS } from "../redux/Types";
 
 
 function UserList() {
   const users = useSelector(state => state.users);
-
   const dispatch = useDispatch();
 
+  console.log(users);
+  useEffect(() => {
+    dispatch({ type: GET_ALL_USERS, payload: {} });
+  }, [dispatch])
+
+  if (!users) {
+    return null;
+  }
 
   const removeUser = (id) => {
     dispatch({
       type: DELETE_USERS,
       payload: id
     })
+    
   }
+
 
   return (
     <div>

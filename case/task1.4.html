@@ -9,29 +9,30 @@
 <body>
     <div class="container px-5 my-5">
         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <h1 style="text-align: center;">danh sách dịch vụ</h1>
             <div class="mb-3">
-                <label class="form-label" for="tenDịchVụ">Tên dịch vụ</label>
-                <input class="form-control" id="tenDịchVụ" type="text" placeholder="Tên dịch vụ" data-sb-validations="required" />
-                <div class="invalid-feedback" data-sb-feedback="tenDịchVụ:required">Tên dịch vụ is required.</div>
+                <label class="form-label" for="nameService">Tên dịch vụ</label>
+                <input class="form-control" id="nameService" type="text" placeholder="Tên dịch vụ" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="nameService:required">Tên dịch vụ is required.</div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="diệnTichSửDụng">Diện tích sử dụng</label>
-                <input class="form-control" id="diệnTichSửDụng" type="text" placeholder="Diện tích sử dụng" data-sb-validations="required" />
-                <div class="invalid-feedback" data-sb-feedback="diệnTichSửDụng:required">Diện tích sử dụng is required.</div>
+                <label class="form-label" for="area">Diện tích sử dụng</label>
+                <input class="form-control" id="area" type="text" placeholder="Diện tích sử dụng" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="area:required">Diện tích sử dụng is required.</div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="chiPhiThue">Chi phí thuê</label>
-                <input class="form-control" id="chiPhiThue" type="text" placeholder="Chi phí thuê" data-sb-validations="required" />
-                <div class="invalid-feedback" data-sb-feedback="chiPhiThue:required">Chi phí thuê is required.</div>
+                <label class="form-label" for="price">Chi phí thuê</label>
+                <input class="form-control" id="price" type="text" placeholder="Chi phí thuê" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="price:required">Chi phí thuê is required.</div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="sốLượngNgườiTốiDa">Số lượng người tối đa</label>
-                <input class="form-control" id="sốLượngNgườiTốiDa" type="text" placeholder="Số lượng người tối đa" data-sb-validations="required" />
-                <div class="invalid-feedback" data-sb-feedback="sốLượngNgườiTốiDa:required">Số lượng người tối đa is required.</div>
+                <label class="form-label" for="numberPeople">Số lượng người tối đa</label>
+                <input class="form-control" id="numberPeople" type="text" placeholder="Số lượng người tối đa" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="numberPeople:required">Số lượng người tối đa is required.</div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="chọnKiểuThue">chọn kiểu thuê</label>
-                <select class="form-select" id="chọnKiểuThue" aria-label="chọn kiểu thuê">
+                <label class="form-label" for="typeRental">chọn kiểu thuê</label>
+                <select class="form-select" id="typeRental" aria-label="chọn kiểu thuê">
                     <option value="năm">năm</option>
                     <option value="tháng">tháng</option>
                     <option value="ngày">ngày</option>
