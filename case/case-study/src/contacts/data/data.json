@@ -1,0 +1,28 @@
+{
+    "contract": [
+        {
+            "id": 1,
+            "someContracts": "HD-001",
+            "startDate": "12/12/2023",
+            "endDate": "02/02/2024",
+            "deposit": "500",
+            "totalPrice": "2000"
+        },
+        {
+            "id": 2,
+            "someContracts": "HD-002",
+            "startDate": "12/9/2023",
+            "endDate": "02/12/2023",
+            "deposit": "500",
+            "totalPrice": "1500"
+        },
+        {
+            "id": 3,
+            "someContracts": "HD-003",
+            "startDate": "12/10/2023",
+            "endDate": "02/04/2024",
+            "deposit": "1000",
+            "totalPrice": "3000"
+        }
+    ]
+}

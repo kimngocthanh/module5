@@ -1,11 +1,32 @@
+import { useEffect, useState } from "react";
+import { deleteCustomer, getAllCustomer } from "../service/CustomerService";
+import { Link } from "react-router-dom";
+
 function Customer() {
+
+    const [customers,setCustomers] = useState([]);
+
+    const loadCustomer = async () => {
+        const data = await getAllCustomer();
+        setCustomers(data);
+    }
+
+    const removeCustomer = async (id) => {
+        await deleteCustomer(id);
+        await loadCustomer();
+    }
+
+    useEffect(() => {
+        loadCustomer();
+    },[]);
+
     return (
         <div style={{ minHeight: '28rem', marginTop: '5rem' }}>
             <h1 style={{ textAlign: 'center' }}>Danh sách khách hàng</h1>
-            <a href="#" className="btn btn-outline-success" style={{ float: 'right', marginRight: '2rem' }}>Thêm mới</a>
+            <Link to="/customer-create" style={{ float: 'right', marginRight: '2rem' }}><button className="btn btn-primary">Thêm mới</button></Link>
             <table className="table table-striped table-hover mt-2">
                 <thead>
-                    <tr><th>STT</th>
+                    <tr>
                         <th>Họ và tên</th>
                         <th>Ngày sinh</th>
                         <th>Giới tính</th>
@@ -14,48 +35,32 @@ function Customer() {
                         <th>Email</th>
                         <th>Loại khách</th>
                         <th>Địa chỉ</th>
-                        <th colSpan={2}>CHỨC NĂNG</th>
-                    </tr></thead>
-                <tbody><tr>
-                    <td>1</td>
-                    <td>Kim Ngọc Thành</td>
-                    <td>13-09-2001</td>
-                    <td>Nam</td>
-                    <td>001201011357</td>
-                    <td>0961297922</td>
-                    <td>kimthanh130901@gmail.com@gmail.com</td>
-                    <td>Diamond</td>
-                    <td>Hà nội</td>
-                    <td>
-                        <a className="btn btn-outline-primary border border-dark" href="/#">Sửa</a>
-                    </td>
-                    <td>
-                        <a href="#" className="btn btn-outline-danger btn-square border-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                            Xóa
-                        </a>
-                    </td>
-                </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Kim Ngọc Thành</td>
-                        <td>13-09-2001</td>
-                        <td>Nam</td>
-                        <td>001201011357</td>
-                        <td>0961297922</td>
-                        <td>kimthanh130901@gmail.com@gmail.com</td>
-                        <td>Diamond</td>
-                        <td>Hà nội</td>
-                        <td>
-                            <a className="btn btn-outline-primary border border-dark" href="/#">Sửa</a>
-                        </td>
-                        <td>
-                            <a href="#" className="btn btn-outline-danger btn-square border-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                                Xóa
-                            </a>
-                        </td>
+                        <th>Sửa</th>
+                        <th>Xoá</th>
                     </tr>
-                </tbody></table>
-            {/*modal-delete*/}
+                </thead>
+                <tbody>
+                    {
+                        customers.map((customer) => {
+                            return (
+                                <tr key={customer.id}>
+                                    <td>{customer.fullName}</td>
+                                    <td>{customer.dateOfBirth}</td>
+                                    <td>{customer.gender}</td>
+                                    <td>{customer.idCard}</td>
+                                    <td>{customer.phoneNumber}</td>
+                                    <td>{customer.email}</td>
+                                    <td>{customer.customerType}</td>
+                                    <td>{customer.address}</td>
+                                    <td><Link to= {`/edit-customer/${customer.id}`} className="btn btn-warning">Sửa</Link></td>
+                                    <td><button onClick={() => removeCustomer(customer.id)} className="btn btn-danger">Xoá</button></td>
+                                </tr>
+                            )
+                        })
+                    }
+                </tbody>
+            </table>
+            {/* modal-delete
             <div className="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog">
                     <div className="modal-content">
@@ -75,7 +80,7 @@ function Customer() {
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

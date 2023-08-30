@@ -2,7 +2,7 @@
   "services": [
     {
       "id": 1,
-      "serviceName": "Room",
+      "serviceName": "Roomeeeeeeeeeeeeeeeeee",
       "area": 50,
       "rentalCost": 1000000,
       "maxCapacity": 2,
@@ -11,10 +11,7 @@
       "amenities": "",
       "poolArea": "",
       "floors": 1,
-      "freeServices": [
-        "Wifi",
-        "Đậu xe"
-      ]
+      "freeServices": "Miễn phí bữa sáng"
     },
     {
       "id": 2,
@@ -27,20 +24,115 @@
       "amenities": "Tiện nghi 2",
       "poolArea": "",
       "floors": 2,
-      "freeServices": ""
+      "freeServices": "Miễn phí bữa sáng"
+    },
+    {
+      "serviceName": "Housessssss",
+      "area": "123",
+      "rentalCost": "123",
+      "maxCapacity": "123",
+      "rentalType": "ngày",
+      "roomStandard": "",
+      "amenities": "",
+      "poolArea": "",
+      "floors": "",
+      "freeServices": "Miễn phí bữa sáng",
+      "id": 5
+    },
+    {
+      "serviceName": "Homea",
+      "area": "321",
+      "rentalCost": "123",
+      "maxCapacity": "12",
+      "rentalType": "tháng",
+      "roomStandard": "",
+      "amenities": "",
+      "poolArea": "",
+      "floors": "",
+      "freeServices": "miễn phí sáng",
+      "id": 6
+    },
+    {
+      "serviceName": "abc",
+      "area": "123",
+      "rentalCost": "123",
+      "maxCapacity": "123",
+      "rentalType": "giờ",
+      "roomStandard": "",
+      "amenities": "",
+      "poolArea": "",
+      "floors": "",
+      "freeServices": "miễn phí sáng",
+      "id": 7
+    }
+  ],
+  "contract": [
+    {
+      "id": 1,
+      "someContracts": "HD-001",
+      "startDate": "12/12/2023",
+      "endDate": "02/02/2024",
+      "deposit": "500",
+      "totalPrice": "2000"
+    },
+    {
+      "id": 2,
+      "someContracts": "HD-002",
+      "startDate": "12/9/2023",
+      "endDate": "02/12/2023",
+      "deposit": "500",
+      "totalPrice": "1500"
     },
     {
       "id": 3,
-      "serviceName": "Villa",
-      "area": 500,
-      "rentalCost": 2000000,
-      "maxCapacity": 6,
-      "rentalType": "Tháng",
-      "roomStandard": "Vip",
-      "amenities": "Buffet sáng",
-      "poolArea": 40,
-      "floors": 3,
-      "freeServices": ""
+      "someContracts": "HD-003",
+      "startDate": "12/10/2023",
+      "endDate": "02/04/2024",
+      "deposit": "1000",
+      "totalPrice": "3000"
+    },
+    {
+      "someContracts": "A",
+      "startDate": "2023-08-23",
+      "endDate": "2023-08-24",
+      "deposit": 123,
+      "totalPrice": 1234,
+      "id": 4
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "fullName": "Nguyen",
+      "dateOfBirth": "1990-01-01",
+      "gender": "Nam",
+      "idCard": "123456789",
+      "phoneNumber": "0987654321",
+      "email": "nguyenvana@example.com",
+      "customerType": "VIP",
+      "address": "Hanoi"
+    },
+    {
+      "id": 2,
+      "fullName": "Tran Thi B",
+      "dateOfBirth": "1995-02-02",
+      "gender": "Nữ",
+      "idCard": "987654321",
+      "phoneNumber": "0123456789",
+      "email": "tranthib@example.com",
+      "customerType": "Normal",
+      "address": "Ho Chi Minh City"
+    },
+    {
+      "id": 3,
+      "fullName": "Le Van C",
+      "dateOfBirth": "1985-03-03",
+      "gender": "Nam",
+      "idCard": "456123789",
+      "phoneNumber": "0369852147",
+      "email": "levanc@example.com",
+      "customerType": "Normal",
+      "address": "Da Nang"
     }
   ]
 }

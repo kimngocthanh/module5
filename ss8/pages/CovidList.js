@@ -1,6 +1,5 @@
-import { getCovid } from "./db/data"
-function CovitList() {
-
+import axios from "axios";
+function CovitList({ data }) {
     return (
         <>
             <h1>Viet Nam is COVID-19 information</h1>
@@ -15,7 +14,7 @@ function CovitList() {
                     </tr>
                 </thead>
                 <tbody>
-                    {getCovid().map(covid =>(
+                    {data.map(covid => (
                         <tr key={covid.id}>
                             <td>{covid.date}</td>
                             <td>{covid.confirmed}</td>
@@ -28,5 +27,12 @@ function CovitList() {
             </table>
         </>
     )
+}
+
+export async function getStaticProps() {
+    const data = (await axios.get('http://localhost:8080/covid')).data
+    return {
+        props: { data }
+    }
 }
 export default CovitList;

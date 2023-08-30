@@ -1,0 +1,37 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "fullName": "Nguyen Van A",
+      "dateOfBirth": "1990-01-01",
+      "gender": "Nam",
+      "idCard": "123456789",
+      "phoneNumber": "0987654321",
+      "email": "nguyenvana@example.com",
+      "customerType": "VIP",
+      "address": "Hanoi"
+    },
+    {
+      "id": 2,
+      "fullName": "Tran Thi B",
+      "dateOfBirth": "1995-02-02",
+      "gender": "Nữ",
+      "idCard": "987654321",
+      "phoneNumber": "0123456789",
+      "email": "tranthib@example.com",
+      "customerType": "Normal",
+      "address": "Ho Chi Minh City"
+    },
+    {
+      "id": 3,
+      "fullName": "Le Van C",
+      "dateOfBirth": "1985-03-03",
+      "gender": "Nam",
+      "idCard": "456123789",
+      "phoneNumber": "0369852147",
+      "email": "levanc@example.com",
+      "customerType": "Normal",
+      "address": "Da Nang"
+    }
+  ]
+}

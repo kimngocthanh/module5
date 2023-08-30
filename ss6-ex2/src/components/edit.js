@@ -19,9 +19,7 @@ function EditBook() {
     useEffect(() => {
         if (book === undefined) {
             getById();
-
         }
-
     }, [book])
 
     return (
