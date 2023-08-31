@@ -62,7 +62,7 @@ function EditService() {
             }}
         >
             <div className="container px-5 my-5">
-                <h1 style={{ textAlign: "center" }}>Thêm mới dịch vụ</h1>
+                <h1 style={{ textAlign: "center" }}>Sửa dịch vụ</h1>
                 <Form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div className="mb-3">
                         <label className="form-label" htmlFor="serviceName">Tên dịch vụ</label>
@@ -90,6 +90,11 @@ function EditService() {
                             <option value="ngày">ngày</option>
                             <option value="giờ">giờ</option>
                         </Field>
+                    </div>
+                    <div className="mb-3">
+                        <label className="form-label" htmlFor="freeServices">Dịch vụ đi kèm</label>
+                        <Field className="form-control" id="freeServices" type="text" placeholder="Tên dịch vụ" name="freeServices" />
+                        <ErrorMessage name='freeServices' component='span' style={{ color: 'red' }} />
                     </div>
                     <div className="d-grid">
                         <button className="btn btn-primary btn-lg " type="submit">Submit</button>

@@ -19,19 +19,19 @@ function AddCustomer() {
                 idCard: "",
                 phoneNumber: "",
                 email: "",
-                customerType: "",
+                customerType: "Diamond",
                 address: ""
             }}
             validationSchema={Yup.object({
                 fullName: Yup.string()
-                    .required("Tên ko được để trống")
-                    .matches(/^(?:[A-Z][a-z]*)+$/, "Không đúng định dạng"),
+                    .required("Tên ko được để trống"),
+                    // .matches(/^(?:[A-Z][a-z]*)+$/, "Không đúng định dạng"),
                 dateOfBirth: Yup.string()
                     .required("Không được để trống"),
                 gender: Yup.string().required("Không được để trống"),
                 idCard: Yup.string()
-                    .required("Không được để trống")
-                    .matches(/^\d{9}|\d{12}$/, "Không đúng định dạng"),
+                    .required("Không được để trống"),
+                    // .matches(/^\d{9}|\d{12}$/, "Không đúng định dạng"),
                 phoneNumber: Yup.string()
                     .required("Không được để trống"),
                     // .matches(/^(?:\+?84)?(90|91)\d{7}$/, "Không đúng định dạng"),
@@ -47,7 +47,7 @@ function AddCustomer() {
         }}
         >
             {
-                <div class="container px-5 my-5">
+                <div className="container px-5 my-5">
                     <h1 style={{ textAlign: 'center' }}>Thêm mới khách hàng</h1>
                     <Form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <div className="mb-3">
@@ -64,9 +64,9 @@ function AddCustomer() {
                             <label className="form-label d-block">Giới tính</label>
                             <Field as="select" name="gender">
                                 <option className="option" value>--Gender--</option>
-                                <option className="option" value="male">Male</option>
-                                <option className="option" value="famale">Famale</option>
-                                <option className="option" value="other">Other</option>
+                                <option className="option" value="male">Nam</option>
+                                <option className="option" value="famale">Nữ</option>
+                                <option className="option" value="other">Khác</option>
                             </Field>
                             <ErrorMessage name="gender" component='span' style={{ color: 'red' }}/>
                         </div>

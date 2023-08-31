@@ -1,30 +1,30 @@
 {
   "services": [
     {
-      "id": 1,
-      "serviceName": "Roomeeeeeeeeeeeeeeeeee",
-      "area": 50,
-      "rentalCost": 1000000,
-      "maxCapacity": 2,
-      "rentalType": "Giờ",
+      "serviceName": "Housessssss",
+      "area": "123",
+      "rentalCost": "123",
+      "maxCapacity": "123",
+      "rentalType": "ngày",
       "roomStandard": "",
       "amenities": "",
       "poolArea": "",
-      "floors": 1,
-      "freeServices": "Miễn phí bữa sáng"
+      "floors": "",
+      "freeServices": "miễn phí sáng",
+      "id": 1
     },
     {
       "id": 2,
-      "serviceName": "House",
-      "area": 70,
-      "rentalCost": 1500000,
-      "maxCapacity": 4,
-      "rentalType": "Ngày",
-      "roomStandard": "Tiêu chuẩn 2",
-      "amenities": "Tiện nghi 2",
+      "serviceName": "Housessssss",
+      "area": "123",
+      "rentalCost": "123",
+      "maxCapacity": "123",
+      "rentalType": "năm",
+      "roomStandard": "",
+      "amenities": "",
       "poolArea": "",
-      "floors": 2,
-      "freeServices": "Miễn phí bữa sáng"
+      "floors": "",
+      "freeServices": "miễn phí sáng"
     },
     {
       "serviceName": "Housessssss",
@@ -36,15 +36,41 @@
       "amenities": "",
       "poolArea": "",
       "floors": "",
-      "freeServices": "Miễn phí bữa sáng",
+      "freeServices": "miễn phí sáng",
+      "id": 3
+    },
+    {
+      "serviceName": "Housessssss",
+      "area": "123",
+      "rentalCost": "123",
+      "maxCapacity": "123",
+      "rentalType": "ngày",
+      "roomStandard": "",
+      "amenities": "",
+      "poolArea": "",
+      "floors": "",
+      "freeServices": "miễn phí sáng",
+      "id": 4
+    },
+    {
+      "serviceName": "Housessssss",
+      "area": "123",
+      "rentalCost": "123",
+      "maxCapacity": "123",
+      "rentalType": "ngày",
+      "roomStandard": "",
+      "amenities": "",
+      "poolArea": "",
+      "floors": "",
+      "freeServices": "miễn phí sáng",
       "id": 5
     },
     {
-      "serviceName": "Homea",
-      "area": "321",
+      "serviceName": "Housessssss",
+      "area": "123",
       "rentalCost": "123",
-      "maxCapacity": "12",
-      "rentalType": "tháng",
+      "maxCapacity": "123",
+      "rentalType": "ngày",
       "roomStandard": "",
       "amenities": "",
       "poolArea": "",
@@ -53,17 +79,43 @@
       "id": 6
     },
     {
-      "serviceName": "abc",
+      "serviceName": "Housessssss",
       "area": "123",
       "rentalCost": "123",
       "maxCapacity": "123",
-      "rentalType": "giờ",
+      "rentalType": "ngày",
       "roomStandard": "",
       "amenities": "",
       "poolArea": "",
       "floors": "",
       "freeServices": "miễn phí sáng",
       "id": 7
+    },
+    {
+      "serviceName": "Housessssss",
+      "area": "123",
+      "rentalCost": "123",
+      "maxCapacity": "123",
+      "rentalType": "ngày",
+      "roomStandard": "",
+      "amenities": "",
+      "poolArea": "",
+      "floors": "",
+      "freeServices": "miễn phí sáng",
+      "id": 8
+    },
+    {
+      "serviceName": "Housessssss",
+      "area": "1234",
+      "rentalCost": "123",
+      "maxCapacity": "12",
+      "rentalType": "ngày",
+      "roomStandard": "",
+      "amenities": "",
+      "poolArea": "",
+      "floors": "",
+      "freeServices": "miễn phí sáng",
+      "id": 9
     }
   ],
   "contract": [
@@ -114,25 +166,58 @@
     },
     {
       "id": 2,
-      "fullName": "Tran Thi B",
-      "dateOfBirth": "1995-02-02",
-      "gender": "Nữ",
-      "idCard": "987654321",
-      "phoneNumber": "0123456789",
-      "email": "tranthib@example.com",
-      "customerType": "Normal",
-      "address": "Ho Chi Minh City"
+      "fullName": "Nguyen",
+      "dateOfBirth": "1990-01-01",
+      "gender": "Nam",
+      "idCard": "123456789",
+      "phoneNumber": "0987654321",
+      "email": "nguyenvana@example.com",
+      "customerType": "VIP",
+      "address": "Hanoi"
     },
     {
       "id": 3,
-      "fullName": "Le Van C",
-      "dateOfBirth": "1985-03-03",
+      "fullName": "Nguyen",
+      "dateOfBirth": "1990-01-01",
       "gender": "Nam",
-      "idCard": "456123789",
-      "phoneNumber": "0369852147",
-      "email": "levanc@example.com",
-      "customerType": "Normal",
-      "address": "Da Nang"
+      "idCard": "123456789",
+      "phoneNumber": "0987654321",
+      "email": "nguyenvana@example.com",
+      "customerType": "VIP",
+      "address": "Hanoi"
+    },
+    {
+      "id": 4,
+      "fullName": "Nguyen",
+      "dateOfBirth": "1990-01-01",
+      "gender": "Nam",
+      "idCard": "123456789",
+      "phoneNumber": "0987654321",
+      "email": "nguyenvana@example.com",
+      "customerType": "VIP",
+      "address": "Hanoi"
+    },
+    {
+      "id": 5,
+      "fullName": "Nguyen",
+      "dateOfBirth": "1990-01-01",
+      "gender": "Nam",
+      "idCard": "123456789",
+      "phoneNumber": "0987654321",
+      "email": "nguyenvana@example.com",
+      "customerType": "VIP",
+      "address": "Hanoi"
+    },
+    {
+      "id": 6,
+      "fullName": "Nguyen",
+      "dateOfBirth": "1990-01-01",
+      "gender": "Nam",
+      "idCard": "123456789",
+      "phoneNumber": "0987654321",
+      "email": "nguyenvana@example.com",
+      "customerType": "VIP",
+      "address": "Hanoi"
     }
   ]
 }
