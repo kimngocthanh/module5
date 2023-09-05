@@ -1,0 +1,47 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "code": "pr-001",
+      "name": "Áo thana",
+      "date": "06/09/2023",
+      "number": 15,
+      "typeProduct": {
+        "id": 1,
+        "name": "Áo"
+      }
+    },
+    {
+      "id": 2,
+      "code": "pr-002",
+      "name": "a",
+      "date": "06/09/2023",
+      "number": 15,
+      "typeProduct": {
+        "id": 2,
+        "name": "Quần"
+      }
+    },
+    {
+      "id": 3,
+      "code": "pr-003",
+      "name": "abcggb",
+      "date": "31/09/2023",
+      "number": 4,
+      "typeProduct": {
+        "id": 1,
+        "name": "Áo"
+      }
+    }
+  ],
+  "typeProduct": [
+    {
+      "id": 1,
+      "name": "Áo"
+    },
+    {
+      "id": 2,
+      "name": "Quần"
+    }
+  ]
+}
